@@ -79,7 +79,7 @@ const handleCheckbox = () => {
 checkbox.addEventListener("click", handleCheckbox);
 
 
-const deleteBtn = document.querySelector("#____");
+const deleteBtn = document.querySelector("#Deletebtn");
 
 const handleDelete = () => {
     inbox.classList.toggle("hidden");
@@ -92,3 +92,22 @@ const handleDelete = () => {
 };
 
 deleteBtn.addEventListener("click", handleDelete);
+
+
+const readBtn = document.querySelector("#Markbtn");
+
+const markRead = () => {
+    unreadBtn.classList.remove("hidden");
+    inbox.classList.remove("is-selected");
+    inbox.classList.add("is-read");
+    checkbox.checked = false;
+};
+
+readBtn.addEventListener("click", markRead);
+
+const Darkbtn = document.querySelector("#Dark")
+const body = document.querySelector("body")
+
+Darkbtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+})

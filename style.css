@@ -48,3 +48,9 @@ body {
 .read {
   color: rgb(125, 255, 125);
 }
+
+
+.dark-mode {
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+}
